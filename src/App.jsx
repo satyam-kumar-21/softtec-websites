@@ -14,6 +14,14 @@ import ScrollToTop from "./ScrollToTop";
 import DomainRegi from "./components/services/DomainRegi";
 import TopChatBot from "./components/TopChatBot";
 import WebHosting from "./components/services/WebHosting";
+import MailSolution from "./components/services/MailSolution";
+import SeoService from "./components/services/SeoService";
+import ItMaintanceSerices from "./components/services/ItMaintanceSerices";
+import DevelopmentProcess from "./components/solutions/DevelopmentProcess";
+import TechUsed from "./components/solutions/TechUsed";
+import ClientSatisfection from "./components/solutions/ClientSatisfection";
+import Contact from "./components/contact/Contact";
+import Career from "./components/carreer/Career";
 
 function App() {
   return (
@@ -40,14 +48,14 @@ function App() {
           <Route path="/services/ecommerce-solutions" element={<ECommerceSolution />} />
           <Route path="/services/domain-registration" element={<DomainRegi />} />
           <Route path="/services/web-hosting" element={<WebHosting />} />
-          <Route path="/services/mail-solutions" element={<Home />} />
-          <Route path="/services/seo-services" element={<Home />} />
-          <Route path="/services/it-maintenance" element={<Home />} />
+          <Route path="/services/mail-solutions" element={<MailSolution />} />
+          <Route path="/services/seo-services" element={<SeoService />} />
+          <Route path="/services/it-maintenance" element={<ItMaintanceSerices />} />
 
           {/* Solutions */}
-          <Route path="/solutions/development-process" element={<Home />} />
-          <Route path="/solutions/technologies-used" element={<Home />} />
-          <Route path="/solutions/client-satisfaction" element={<Home />} />
+          <Route path="/solutions/development-process" element={<DevelopmentProcess />} />
+          <Route path="/solutions/technologies-used" element={<TechUsed />} />
+          <Route path="/solutions/client-satisfaction" element={<ClientSatisfection />} />
 
           {/* Products */}
           <Route path="/products/courier-software" element={<Home />} />
@@ -56,9 +64,9 @@ function App() {
           <Route path="/products/inventory-management" element={<Home />} />
 
           {/* Other Pages */}
-          <Route path="/career" element={<Home />} />
+          <Route path="/career" element={<Career />} />
           <Route path="/demo" element={<Home />} />
-          <Route path="/contact" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
 
