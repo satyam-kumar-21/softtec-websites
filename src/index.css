@@ -1,0 +1,25 @@
+/* src/index.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "aos/dist/aos.css";
+@layer base {
+    html,
+    body {
+        font-family: 'Outfit', system-ui, sans-serif;
+        background-color: #fdfdfd;
+        color: #1a1a1a;
+    }
+    h1,
+    h2,
+    h3 {
+        font-weight: 600;
+        letter-spacing: -0.5px;
+    }
+    p {
+        line-height: 1.7;
+        color: #444;
+    }
+}
