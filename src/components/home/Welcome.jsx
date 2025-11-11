@@ -22,24 +22,25 @@ function Welcome() {
 
         {/* Paragraph */}
         <motion.p
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.2 }}
-          viewport={{ once: true }}
-          className="text-gray-700 text-base md:text-lg leading-relaxed max-w-3xl mx-auto"
-        >
-          Softec is the brainchild of a team of innovative IT professionals who
-          positioned the brand for customized solutions to meet the most exacting
-          needs of valued customers. Softec has carved a major market share in
-          software development from the grass root level with special focus on
-          the control and automation vertical.
-          <br />
-          <br />
-          The organization has path-breaking applications backed with the best of
-          resources and infrastructure, setting unbeatable standards in customer
-          satisfaction. If you are looking for solutions beyond a script, come to
-          Softec for long-term business success.
-        </motion.p>
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.9, delay: 0.2 }}
+  viewport={{ once: true }}
+  className="text-gray-700 text-base md:text-lg leading-relaxed max-w-3xl mx-auto text-justify"
+>
+  Softec is the brainchild of a team of innovative IT professionals who
+  positioned the brand for customized solutions to meet the most exacting
+  needs of valued customers. Softec has carved a major market share in
+  software development from the grass root level with special focus on
+  the control and automation vertical.
+  <br />
+  <br />
+  The organization has path-breaking applications backed with the best of
+  resources and infrastructure, setting unbeatable standards in customer
+  satisfaction. If you are looking for solutions beyond a script, come to
+  Softec for long-term business success.
+</motion.p>
+
 
         {/* Button */}
         <motion.button

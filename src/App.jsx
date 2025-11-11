@@ -13,6 +13,7 @@ import ECommerceSolution from "./components/services/ECommerceSolution";
 import ScrollToTop from "./ScrollToTop";
 import DomainRegi from "./components/services/DomainRegi";
 import TopChatBot from "./components/TopChatBot";
+import WebHosting from "./components/services/WebHosting";
 
 function App() {
   return (
@@ -38,7 +39,7 @@ function App() {
           <Route path="/services/web-development" element={<WebDev />} />
           <Route path="/services/ecommerce-solutions" element={<ECommerceSolution />} />
           <Route path="/services/domain-registration" element={<DomainRegi />} />
-          <Route path="/services/web-hosting" element={<Home />} />
+          <Route path="/services/web-hosting" element={<WebHosting />} />
           <Route path="/services/mail-solutions" element={<Home />} />
           <Route path="/services/seo-services" element={<Home />} />
           <Route path="/services/it-maintenance" element={<Home />} />
