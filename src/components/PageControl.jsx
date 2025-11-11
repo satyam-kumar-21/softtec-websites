@@ -41,7 +41,7 @@ function PageControl({ title, breadcrumb, image, link = "/" }) {
             Home
           </Link>
           <ChevronRight size={16} className="text-gray-300" />
-          <span className="font-medium text-blue-400">{breadcrumb}</span>
+          <span className="font-medium text-red-600">{breadcrumb}</span>
         </div>
       </motion.div>
     </section>

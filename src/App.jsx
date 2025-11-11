@@ -6,10 +6,20 @@ import Home from "./components/home/Home";
 import About from "./components/about/About";
 import WhySofttec from "./components/about/WhySofttec";
 import ManagementTeam from "./components/about/ManagemntTeam";
+import ApplicationDev from "./components/services/ApplicationDev";
+import WebDesigning from "./components/services/WebDesigning";
+import WebDev from "./components/services/WebDev";
+import ECommerceSolution from "./components/services/ECommerceSolution";
+import ScrollToTop from "./ScrollToTop";
+import DomainRegi from "./components/services/DomainRegi";
+import TopChatBot from "./components/TopChatBot";
 
 function App() {
   return (
     <Router>
+      
+      <ScrollToTop />
+      <TopChatBot />
       <Header />
 
       <main className="min-h-screen bg-gray-50 pt-24">
@@ -23,11 +33,11 @@ function App() {
           <Route path="/about/management-team" element={<ManagementTeam />} />
 
           {/* Services */}
-          <Route path="/services/application-development" element={<Home />} />
-          <Route path="/services/website-designing" element={<Home />} />
-          <Route path="/services/web-development" element={<Home />} />
-          <Route path="/services/ecommerce-solutions" element={<Home />} />
-          <Route path="/services/domain-registration" element={<Home />} />
+          <Route path="/services/application-development" element={<ApplicationDev />} />
+          <Route path="/services/website-designing" element={<WebDesigning />} />
+          <Route path="/services/web-development" element={<WebDev />} />
+          <Route path="/services/ecommerce-solutions" element={<ECommerceSolution />} />
+          <Route path="/services/domain-registration" element={<DomainRegi />} />
           <Route path="/services/web-hosting" element={<Home />} />
           <Route path="/services/mail-solutions" element={<Home />} />
           <Route path="/services/seo-services" element={<Home />} />

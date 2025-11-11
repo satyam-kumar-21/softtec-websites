@@ -76,7 +76,7 @@ export default function HeroSection() {
 
             <motion.button
               whileHover={{ scale: 1.05 }}
-              className="mt-8 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-full shadow-md transition"
+              className="mt-8 px-6 py-3 bg-red-900 hover:bg-red-700 text-white font-medium rounded-full shadow-md transition"
             >
               Learn More
             </motion.button>

@@ -11,7 +11,7 @@ function CompanyOverview() {
     <section className="bg-gradient-to-b from-gray-50 to-white text-gray-800">
       {/* ===== Title Section ===== */}
       <div className="text-center py-16 px-6" data-aos="fade-up">
-        <h2 className="text-4xl md:text-5xl font-bold text-blue-700 mb-4">
+        <h2 className="text-4xl md:text-5xl font-bold text-red-900 mb-4">
           Company Overview
         </h2>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -30,7 +30,7 @@ function CompanyOverview() {
         </div>
 
         <div className="md:w-1/2" data-aos="fade-left">
-          <h3 className="text-2xl font-semibold mb-4 text-blue-600">
+          <h3 className="text-2xl font-semibold mb-4 text-red-900">
             About Softec
           </h3>
           <p className="text-gray-700 leading-relaxed">
@@ -48,7 +48,7 @@ function CompanyOverview() {
       {/* ===== Section 2 ===== */}
       <div className="container mx-auto flex flex-col-reverse md:flex-row items-center gap-12 px-6 md:px-12 py-12 bg-blue-50 rounded-3xl">
         <div className="md:w-1/2" data-aos="fade-right">
-          <h3 className="text-2xl font-semibold mb-4 text-blue-600">
+          <h3 className="text-2xl font-semibold mb-4 text-red-900">
             Our Mission & Expertise
           </h3>
           <p className="text-gray-700 leading-relaxed">
@@ -82,7 +82,7 @@ function CompanyOverview() {
         </div>
 
         <div className="md:w-1/2" data-aos="fade-left">
-          <h3 className="text-2xl font-semibold mb-4 text-blue-600">
+          <h3 className="text-2xl font-semibold mb-4 text-red-900">
             Softec Strengths
           </h3>
           <ul className="space-y-3 text-gray-700">
@@ -96,7 +96,7 @@ function CompanyOverview() {
       </div>
 
       {/* ===== Outro ===== */}
-      <div className="text-center py-16 bg-gradient-to-r from-blue-700 to-blue-900 text-white px-6" data-aos="zoom-in">
+      <div className="text-center py-16 bg-gradient-to-r from-red-800 to-red-900 text-white px-6" data-aos="zoom-in">
         <h3 className="text-2xl md:text-3xl font-semibold mb-4">
           Building Tomorrow’s IT Solutions Today 🚀
         </h3>

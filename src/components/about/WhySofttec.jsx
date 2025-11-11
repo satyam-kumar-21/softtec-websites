@@ -29,7 +29,7 @@ function WhySofttec() {
         viewport={{ once: true }}
       >
         <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
-          Why Choose <span className="text-blue-600">Softec</span>?
+          Why Choose <span className="text-red-900">Softec</span>?
         </h2>
         <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
           Software Development at Softec has lots of benefits. Through our software development you reduce costs of outsourcing and get the best software utility ever.
@@ -41,13 +41,13 @@ function WhySofttec() {
         {points.map((point, index) => (
           <motion.div
             key={index}
-            className="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-blue-600 hover:shadow-2xl transition-all cursor-pointer"
+            className="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-red-900 hover:shadow-2xl transition-all cursor-pointer"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: index * 0.2 }}
             viewport={{ once: true }}
           >
-            <div className="text-blue-600 font-semibold text-lg mb-2">
+            <div className="text-red-900 font-semibold text-lg mb-2">
               {`0${index + 1}`}
             </div>
             <p className="text-gray-700 leading-relaxed">{point}</p>

@@ -15,9 +15,9 @@ function Welcome() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600"
+          className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-purple-600"
         >
-          Welcome to <span className="text-blue-700">Softec</span>
+          Welcome to <span className="text-red-900">Softec</span>
         </motion.h1>
 
         {/* Paragraph */}
@@ -47,7 +47,7 @@ function Welcome() {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
-          className="mt-8 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-full shadow-md hover:shadow-lg hover:scale-105 transition-transform duration-300"
+          className="mt-8 bg-gradient-to-r from-red-900 to-red-800 text-white px-8 py-3 rounded-full shadow-md hover:shadow-lg hover:scale-105 transition-transform duration-300"
         >
           Learn More
         </motion.button>

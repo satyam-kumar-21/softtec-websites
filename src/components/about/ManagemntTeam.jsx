@@ -20,7 +20,7 @@ function ManagementTeam() {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold text-red-900 mb-6 text-center">
             Our Dedicated Team
           </h2>
           <p className="text-gray-700 text-lg sm:text-xl leading-relaxed text-justify">
