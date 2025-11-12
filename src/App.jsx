@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/home/Home";
@@ -22,16 +22,26 @@ import TechUsed from "./components/solutions/TechUsed";
 import ClientSatisfection from "./components/solutions/ClientSatisfection";
 import Contact from "./components/contact/Contact";
 import Career from "./components/carreer/Career";
+import Demo from "./components/demo/Demo";
+import UserDemo from "./components/demo/UserDemo";
+import AdminDemo from "./components/demo/AdminDemo";
 
-function App() {
+function AppLayout() {
+  const location = useLocation();
+
+  // List of routes where header & footer should NOT appear
+  const hideHeaderFooter = ["/user-demo", "/admin-demo"];
+
+  const shouldHide = hideHeaderFooter.includes(location.pathname);
+
   return (
-    <Router>
-      
+    <>
       <ScrollToTop />
       <TopChatBot />
-      <Header />
 
-      <main className="min-h-screen bg-gray-50 pt-24">
+      {!shouldHide && <Header />}
+
+      <main className={`${shouldHide ? "bg-gray-900 min-h-screen" : "bg-gray-50 min-h-screen pt-24"}`}>
         <Routes>
           {/* Home */}
           <Route path="/" element={<Home />} />
@@ -57,22 +67,27 @@ function App() {
           <Route path="/solutions/technologies-used" element={<TechUsed />} />
           <Route path="/solutions/client-satisfaction" element={<ClientSatisfection />} />
 
-          {/* Products */}
-          <Route path="/products/courier-software" element={<Home />} />
-          <Route path="/products/travel-hotel-management" element={<Home />} />
-          <Route path="/products/school-college-erp" element={<Home />} />
-          <Route path="/products/inventory-management" element={<Home />} />
-
           {/* Other Pages */}
           <Route path="/career" element={<Career />} />
-          <Route path="/demo" element={<Home />} />
+          <Route path="/demo" element={<Demo />} />
+
+          {/* Demo pages without header/footer */}
+          <Route path="/user-demo" element={<UserDemo />} />
+          <Route path="/admin-demo" element={<AdminDemo />} />
+
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
 
-      <Footer />
-    </Router>
+      {!shouldHide && <Footer />}
+    </>
   );
 }
 
-export default App;
+export default function App() {
+  return (
+    <Router>
+      <AppLayout />
+    </Router>
+  );
+}

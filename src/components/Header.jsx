@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
-import logo from "../../public/image/SoftecLogo.png"
+import logo from "/image/SoftecLogo.png"
 
 const Header = () => {
     const [mobileOpen, setMobileOpen] = useState(false);
