@@ -25,6 +25,10 @@ import Career from "./components/carreer/Career";
 import Demo from "./components/demo/Demo";
 import UserDemo from "./components/demo/UserDemo";
 import AdminDemo from "./components/demo/AdminDemo";
+import CourierSoftware from "./components/products/CourierSoftware";
+import TravelAndHotel from "./components/products/TravelAndHotel";
+import SchoolERP from "./components/products/SchoolERP";
+import Inventory from "./components/products/Inventory";
 
 function AppLayout() {
   const location = useLocation();
@@ -66,6 +70,12 @@ function AppLayout() {
           <Route path="/solutions/development-process" element={<DevelopmentProcess />} />
           <Route path="/solutions/technologies-used" element={<TechUsed />} />
           <Route path="/solutions/client-satisfaction" element={<ClientSatisfection />} />
+
+          {/* Products  */}
+          <Route path="/products/courier-software" element={<CourierSoftware />} />
+          <Route path="/products/travel-hotel-management" element={<TravelAndHotel />} />
+          <Route path="/products/school-college-erp" element={<SchoolERP />} />
+          <Route path="/products/inventory-management" element={<Inventory />} />
 
           {/* Other Pages */}
           <Route path="/career" element={<Career />} />
